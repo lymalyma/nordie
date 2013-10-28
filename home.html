@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<title>Nordie buy app</title>
+</head>
+<body>
+	<div id="topborder">NORDIE</div>
+	<div id="content">
+		<form id="calculateForm">
+			<ul>
+				<li>
+					<input type="text" name="price" id="price" placeholder="Price" />
+				</li>
+			
+				<li>
+					<input type="radio" value="House20" name="discount" id="discount20" checked /> House20
+					<input type="radio" value="House33" name="discount" id="discount33" /> House33
+				</li>
+
+				<li>
+					<input type="text" name="rewards" id="rewards" placeholder="Rewards" />
+				</li>
+
+				<li>
+					<input type="text" name="salestax" id="salestax" placeholder="Sales Tax"/>
+				</li>
+			</ul>
+			<div id="summary">
+				<span id="total">Total:</span>
+				<input type="button" value="CALCULATE" id="calculateBtn" />
+			</div>
+		</form>
+	</div>	
+	<script type="text/javascript" src="calculate.js"></script>
+</body>
+</html>

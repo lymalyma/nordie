@@ -1,0 +1,86 @@
+body {
+	background: url(http://beautifultricia.files.wordpress.com/2013/03/f7.jpg);
+	background-size: cover;
+	background-position: 25px 25px;
+	font-family: Helvetica, Verdana;
+	font-style: normal;
+	font-size: 14px;
+	color: white;
+	margin: auto;
+	height: 100%;
+}
+
+#topborder {
+	margin: auto;
+	width: 100%;
+	background-color: #222;
+	height: 45px;
+	text-align: center;
+	font-size: 25px;
+	line-height: 45px;
+}
+
+#content {
+	margin-top: 2.5rem;
+}
+#calculateForm {
+	background: rgba(2, 2, 2, 0.8);
+	border: none;
+	padding: 0.5rem;
+	/* border-radius: 20px; */
+	margin: auto;
+	width: 20.5rem;
+}
+
+input[type="button"]:hover {
+	background: #DD00B2;
+}
+
+input[type="button"] {
+	background: #FF00A3;
+	border: none;
+	border-bottom: 3px solid #C2006D;
+	height: 3.6rem;
+	min-width: 8rem;
+	color: #FFF;
+	font-size: 1.35em;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+}
+
+#summary {
+	vertical-align: baseline;
+	text-align: left;
+	height: 4.8rem;
+}
+
+#calculateBtn {
+	float: right;
+	margin-right: 20px;
+	padding: 0.5rem;
+	display: inline-block;
+}
+
+#total {
+	padding: 1rem;
+	font-size: 1.35em;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+}
+
+form > ul > li {
+	list-style: none;
+}
+
+
+
+input[type="text"] {
+	margin: 5px 5px 5px 10px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 1.35em;
+	/* border-radius: 10px; */
+}
