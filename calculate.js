@@ -23,7 +23,13 @@ nordie.getRewards = function() {
 };
 nordie.getSalestax = function() {
 	var e = document.getElementById("salestax");
-	return parseFloat(e.value);
+	if (isNumeric(e.value) == true) {
+			tax = parseFloat(e.value/100.00); 
+			return tax;
+	} else {
+		window.alert("Please enter a valid sales state tax");
+	}
+
 };
 
 nordie.getInputData = function() {
@@ -37,9 +43,15 @@ nordie.getInputData = function() {
 
 nordie.showTotal = function() {
 	var data = nordie.getInputData();
-	var total = nordie.calculateTotal(data.price, data.discount, 
+	var total = nordie.calculateTotal(data.price, data.discount,
 		data.rewards, data.salestax);
+		total.toFixed(2);
 	document.getElementById("total").innerHTML = "Total: $ " + total;
 };
 
 document.getElementById("calculateBtn").onclick = nordie.showTotal;
+
+
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}

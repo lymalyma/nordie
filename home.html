@@ -5,25 +5,32 @@
 	<title>Nordie buy app</title>
 </head>
 <body>
-	<div id="topborder">NORDIE</div>
+	<div id="topborder">NORDSTROM PURCHASE CALCULATOR</div>
 	<div id="content">
 		<form id="calculateForm">
 			<ul>
 				<li>
-					<input type="text" name="price" id="price" placeholder="Price" />
+					<h4>Price</h4>
+
+					<input type="text" name="price" id="price" placeholder="$0.00" />
 				</li>
-			
+				<br>
+
 				<li>
+					<h4>Choose your House Discount</h4>
 					<input type="radio" value="House20" name="discount" id="discount20" checked /> House20
 					<input type="radio" value="House33" name="discount" id="discount33" /> House33
 				</li>
+				<br>
 
 				<li>
-					<input type="text" name="rewards" id="rewards" placeholder="Rewards" />
+					<h4>Type in your rewards certificate</h4>
+					<input type="text" name="rewards" id="rewards" placeholder="Rewards: ex. $20.00" value=0.00 />
 				</li>
 
 				<li>
-					<input type="text" name="salestax" id="salestax" placeholder="Sales Tax"/>
+					<h4>Type your sales tax</h4>
+					<input type="text" name="salestax" id="salestax" placeholder="% Sales Tax" value=8.25 />
 				</li>
 			</ul>
 			<div id="summary">
@@ -31,7 +38,7 @@
 				<input type="button" value="CALCULATE" id="calculateBtn" />
 			</div>
 		</form>
-	</div>	
+	</div>
 	<script type="text/javascript" src="calculate.js"></script>
 </body>
 </html>
